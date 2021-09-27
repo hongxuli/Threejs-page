@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  //   overflow: hidden;
+  //   overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+.intro {
+  position: relative;
+  width: 100vw;
+  height: 500vh; // sliderWidth /2  + window.innerHeight
+
+  .slider-container {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+
+    .slider-inner {
+      display: flex;
+      width: 200vw;
+      // justify-content: space-around;
+
+      .item {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: red;
+      }
+
+      .textPage {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+
+        .stage {
+          background-color: black;
+          position: absolute;
+        }
+        .text {
+          z-index: 200;
+          display: none;
+        }
+
+        .inputbar {
+          z-index: 400;
+          position: absolute;
+          text-transform: uppercase;
+          width: 90%;
+          bottom: 20px;
+          background: none;
+          outline: none;
+          border: none;
+          font-size: 30px;
+          color: #222;
+          font-weight: bold;
+          text-align: center;
+          border-bottom: 1px solid #333;
+          left: 5%;
+        }
+      }
+    }
+  }
+}
+
+.item2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+}
+
+#floatCardPage{
+  background-color: black;
+  .element{
+    color: #8ff;
+    width: 120px;
+    height: 160px;
+    text-align: center;
+  }
+}
